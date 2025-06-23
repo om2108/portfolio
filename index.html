@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(48, 255, 255);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(13, 93, 93);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(159, 159, 255);
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 90px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .rightSection {
+            width: 35px;
+            margin: 30px 0;
+        }
+
+        .leftSection {
+            font-size: 2.6rem;
+            margin: 70px;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        main hr {
+            border: 0;
+            background: #f331f3;
+            height: 1.2px;
+            margin: 30px 84px;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 47px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 200px;
+        }
+
+        .text-grey {
+            color: gray;
+        }
+
+        .image-top {
+            width: 31px;
+            position: relative;
+            top: -38px;
+            left: -22px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 72px;
+            width: 150px;
+            font-size: 30px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 15px;
+        }
+
+        .site-footer {
+            background-color: #006a6a;
+            color: #fff;
+            padding: 40px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            width: 30%;
+            padding: 20px;
+        }
+
+        .footer-section h2 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-bottom: -35px;
+            background-color: #222
+        }
+
+        #button {
+            background-color: blue;
+            width: 100px;
+            margin-left: 120px;
+        }
+        .footer-section a:hover {
+            color: rgb(159, 159, 255);
+            font-size: 1.02rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Omkar Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My name is <span class="purple"> Omkar</span>
+                <div>and I am passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="om.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">what i have done so far</span>
+            <h1>Work Experiance</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati adipisci tempore quod
+                        doloribus quam iusto, perspiciatis sint minus, architecto pariatur itaque asperiores distinctio
+                        ex!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="css.png" alt="">
+                    <div class="vertical-title">
+                        CSS Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati adipisci tempore quod
+                        doloribus quam iusto, perspiciatis sint minus, architecto pariatur itaque asperiores distinctio
+                        ex!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="js.webp" alt="">
+                    <div class="vertical-title">
+                        Node js Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati adipisci tempore quod
+                        doloribus quam iusto, perspiciatis sint minus, architecto pariatur itaque asperiores
+                        distinctio
+                        ex!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>About Me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, ipsum?</p>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Me</h2>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Your Email">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn" id="button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 OmkarPawar. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Graphic Designer.', 'Web Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
